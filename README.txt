@@ -1,37 +1,19 @@
-پکیج نهایی سایت برای بارگذاری در GitHub Pages
-نام کاربری GitHub: kamalvand110-bit
-
+سایت محمد علی کمالوند - انبارداری و زنجیره تامین
 فایل‌ها:
-- index.html
-- profile.jpg (placeholder; اگر می‌خواهید عکس خودتان را بگذارید، این فایل را جایگزین کنید)
-- profile_round.png (تصویر دایره‌ای برای هدر)
-- profile_thumb.jpg (256x256)
-- sitemap.xml (الگو - دامنهٔ خود را جایگزین کنید)
-- articles/index.json
-- articles/chidamane-shimi-ai.html
-- README.txt (این فایل)
+- index.html: صفحه اصلی با Tailwind و JS برای لیست و viewer مقالات.
+- sitemap.xml: برای SEO و ایندکس Google.
+- chidamane.pdf: PDF چیدمان انبار (ادغام تصاویر کلاس‌های خطرناک).
+- graph.pdf: PDF تحقیق گراف (ادغام تصاویر نقشه کونیگسبرگ).
+- strategy.pdf: PDF استراتژی زنجیره تامین (ادغام مقدمه جدید).
+- tracking.pdf: PDF ردیابی ربات (ادغام مزایا جدید).
+- README.txt: این فایل.
 
-راهنمای سریع (رابط وب):
-1. به https://github.com برو و وارد حساب خود شوید.
-2. بالا سمت راست ➕ → New repository. نام مخزن را مثلاً kamalvand110-bit.github.io قرار دهید تا سایت در URL https://kamalvand110-bit.github.io منتشر شود.
-3. ایجاد مخزن. سپس روی Add file → Upload files کلیک کنید و همهٔ فایل‌ها را از این بسته بارگذاری کنید (index.html و پوشه articles و تصاویر).
-4. Commit changes. پس از چند دقیقه سایت در https://kamalvand110-bit.github.io در دسترس خواهد بود.
+راهنما:
+1. مخزن GitHub بسازید (kamalvand110-bit.github.io).
+2. فایل‌ها را آپلود و commit کنید.
+3. در تنظیمات Pages، شاخه main را انتخاب کنید.
+4. سایت در https://kamalvand110-bit.github.io آماده است.
+5. برای Google: به Search Console بروید، سایت اضافه کنید و sitemap.xml را submit کنید (URL: https://kamalvand110-bit.github.io/sitemap.xml).
+6. PDFها را با ابزار مانند ILovePDF از تصاویر + محتوای قبلی بسازید.
 
-روش با git (خط فرمان):
-```
-cd /path/to/extracted/site-folder
-git init
-git add .
-git commit -m "Initial site upload for kamalvand110-bit"
-git branch -M main
-git remote add origin https://github.com/kamalvand110-bit/kamalvand110-bit.github.io.git
-git push -u origin main
-```
-
-اضافه کردن مقالهٔ جدید:
-- مقاله را به صورت فایل HTML یا Markdown داخل پوشهٔ articles قرار دهید.
-- سپس آیتمی به articles/index.json اضافه کنید تا در صفحهٔ اصلی نمایش داده شود. مثال:
-{ "id": "new-id", "title": "عنوان مقاله", "description": "خلاصه کوتاه", "url": "articles/new-article.html", "date": "2025-10-09", "tags": ["نمونه"] }
-
-اتصال دامنه اختصاصی:
-- دامنه را بخرید و رکورد DNS را طبق راهنمای GitHub Pages تنظیم کنید. سپس نام دامنه را در تنظیمات مخزن → Pages → Custom domain وارد کنید.
+نکته: اگر تصاویر PDF نیاز به آپلود جدا دارند، در hero استفاده کنید (مثل <img src="konigsberg_map.png"> در محتوا).
