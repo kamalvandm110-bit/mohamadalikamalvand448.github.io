@@ -1,28 +1,19 @@
-پکیج نهایی سایت برای بارگذاری در GitHub Pages
-نام کاربری GitHub: kamalvand110-bit
-
+سایت محمد علی کمالوند - انبارداری و زنجیره تامین
 فایل‌ها:
-- index.html
-- profile.jpg (تصویر پروفایل جدید)
-- profile_round.png (تصویر گرد پروفایل جدید)
-- sitemap.xml (به‌روزرسانی‌شده برای SEO)
-- articles/index.json (با مقالات جدید)
-- articles/chidamane-shimi-ai.html
-- articles/strategy-redesign.html
-- articles/graph-ai.html
-- articles/tracking-bot.html
-- README.txt (این فایل)
+- index.html: صفحه اصلی با Tailwind و JS برای لیست و viewer مقالات.
+- sitemap.xml: برای SEO و ایندکس Google.
+- chidamane.pdf: PDF چیدمان انبار (ادغام تصاویر کلاس‌های خطرناک).
+- graph.pdf: PDF تحقیق گراف (ادغام تصاویر نقشه کونیگسبرگ).
+- strategy.pdf: PDF استراتژی زنجیره تامین (ادغام مقدمه جدید).
+- tracking.pdf: PDF ردیابی ربات (ادغام مزایا جدید).
+- README.txt: این فایل.
 
-راهنمای سریع (رابط وب):
-1. به https://github.com بروید و وارد حساب شوید.
-2. مخزن جدید بسازید با نام kamalvand110-bit.github.io.
-3. فایل‌ها را آپلود کنید (پوشه articles را کامل آپلود کنید).
-4. در تنظیمات مخزن > Pages، شاخه main را انتخاب کنید.
-5. سایت در https://kamalvand110-bit.github.io آماده است.
+راهنما:
+1. مخزن GitHub بسازید (kamalvand110-bit.github.io).
+2. فایل‌ها را آپلود و commit کنید.
+3. در تنظیمات Pages، شاخه main را انتخاب کنید.
+4. سایت در https://kamalvand110-bit.github.io آماده است.
+5. برای Google: به Search Console بروید، سایت اضافه کنید و sitemap.xml را submit کنید (URL: https://kamalvand110-bit.github.io/sitemap.xml).
+6. PDFها را با ابزار مانند ILovePDF از تصاویر + محتوای قبلی بسازید.
 
-برای SEO و ایندکس Google:
-1. به https://search.google.com/search-console بروید و سایت را اضافه کنید.
-2. sitemap.xml را submit کنید (URL: https://kamalvand110-bit.github.io/sitemap.xml).
-3. صبر کنید تا Google ایندکس کند (چند روز تا هفته).
-
-اضافه کردن مقاله جدید: فایل HTML جدید در articles/ بگذارید و index.json را بروز کنید.
+نکته: اگر تصاویر PDF نیاز به آپلود جدا دارند، در hero استفاده کنید (مثل <img src="konigsberg_map.png"> در محتوا).
