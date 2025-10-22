@@ -13,9 +13,10 @@
 
 راهنمای سریع (رابط وب):
 1. به https://github.com برو و وارد حساب خود شوید.
-2. بالا سمت راست ➕ → New repository. نام مخزن را مثلاً kamalvand110-bit.github.io قرار دهید تا سایت در URL https://kamalvand110-bit.github.io منتشر شود.
+2. بالا سمت راست ➕ → New repository. نام مخزن را مثلاً kamalvandm110-bit/mohamadalikamalvand448.github.io قرار دهید تا سایت در URL https://kamalvandm110-bit/mohamadalikamalvand448.github.io منتشر شود.
+
 3. ایجاد مخزن. سپس روی Add file → Upload files کلیک کنید و همهٔ فایل‌ها را از این بسته بارگذاری کنید (index.html و پوشه articles و تصاویر).
-4. Commit changes. پس از چند دقیقه سایت در https://kamalvand110-bit.github.io در دسترس خواهد بود.
+4. Commit changes. پس از چند دقیقه سایت در https://kamalvandm110-bit/mohamadalikamalvand448.github.io در دسترس خواهد بود.
 
 روش با git (خط فرمان):
 ```
@@ -24,7 +25,7 @@ git init
 git add .
 git commit -m "Initial site upload for kamalvand110-bit"
 git branch -M main
-git remote add origin https://github.com/kamalvand110-bit/kamalvand110-bit.github.io.git
+git remote add origin  https://kamalvandm110-bit/mohamadalikamalvand448.github.io
 git push -u origin main
 ```
 
