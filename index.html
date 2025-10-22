@@ -1,113 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <!-- متا تگ verification گوگل درست‌شده -->
-  <meta name="google-site-verification" content="google95a617a4448ae9a1" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>محمد علی کمالوند — مشاور انبارداری و زنجیره تامین</title>
-  <meta name="description" content="محمد علی کمالوند — مشاور0 مشاور انبارداری و زنجیره تامین. مقالات، خدمات و تماس. مقالات در مورد هوش مصنوعی در انبارداری، استراتژی زنجیره تامین و گراف‌ها.">
-  <meta name="keywords" content="انبارداری, زنجیره تامین, هوش مصنوعی, ایمنی انبار, بهینه‌سازی چیدمان, گراف در AI, ربات ردیابی">
-  <!-- برای SEO بهتر: اضافه کردن Open Graph برای اشتراک‌گذاری در شبکه‌های اجتماعی -->
-  <meta property="og:title" content="محمد علی کمالوند — مشاور انبارداری و زنجیره تامین">
-  <meta property="og:description" content="مقالات عملی در مورد انبارداری، زنجیره تامین و هوش مصنوعی.">
-  <meta property="og:image" content="https://kamalvand110-bit.github.io/profile_round.png">
-  <meta property="og:url" content="https://kamalvand110-bit.github.io/">
-  <!-- لینک فونت Vazirmatn برای نمایش درست فارسی -->
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-  :root{--bg:#ffffff;--card:#f8fafc;--text:#0b2545;--muted:#64748b;--accent:#0ea5a4}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:'Vazirmatn', system-ui, Arial, sans-serif;background:var(--bg);color:var(--text);direction:rtl;padding:20px}
-  .container{max-width:980px;margin:0 auto;position:relative}
-  header{display:flex;align-items:center;justify-content:space-between;gap:18px}
-  .brand{display:flex;gap:14px;align-items:center}
-  .avatar-box{width:72px;height:72px;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(15,23,42,0.06)}
-  .avatar-box img{width:100%;height:100%;object-fit:cover;display:block}
-  nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:14px}
-  .profile-top-right{position:absolute;top:18px;left:18px}
-  .profile-top-right .rounded{width:88px;height:88px;border-radius:50%;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,0.08);border:3px solid rgba(255,255,255,0.6)}
-  .hero{background:linear-gradient(180deg,#ecfeff,#f8fafc);padding:18px;border-radius:12px}
-  .btn{display:inline-block;padding:9px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none}
-  .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
-  .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.03)}
-  .articles-list{display:flex;flex-direction:column;gap:12px}
-  .article-item{background:white;padding:14px;border-radius:10px;border:1px solid rgba(15,23,42,0.03)}
-  footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
-  @media (max-width:880px){.grid{grid-template-columns:1fr} .profile-top-right{left:12px;top:12px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="محمد علی کمالوند - مشاور انبارداری و زنجیره تامین: مقالات هوش مصنوعی، بهینه‌سازی و لجستیک">
+    <title>محمد علی کمالوند — مشاور انبارداری</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:Tahoma,sans-serif;direction:rtl;text-align:right;max-width:900px;margin:0 auto;padding:20px;background:#f5f5f5;line-height:1.6;}
+        header{background:linear-gradient(135deg,#007bff,#0056b3);color:white;padding:30px;border-radius:10px;text-align:center;margin-bottom:20px;}
+        .profile-img{width:120px;height:120px;border-radius:50%;border:4px solid white;margin:0 auto 15px;display:block;}
+        h1{font-size:2.2em;margin-bottom:5px;}
+        h2{font-size:1.4em;margin-bottom:15px;color:#e9ecef;}
+        .section{background:white;padding:25px;border-radius:8px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+        .article{border-bottom:1px solid #eee;padding:15px 0;}
+        .article:last-child{border-bottom:none;}
+        .article h3 a{color:#007bff;text-decoration:none;font-size:1.1em;}
+        .article-meta{font-size:0.9em;color:#666;margin-top:5px;}
+        .tags{background:#e7f3ff;padding:4px 8px;border-radius:12px;font-size:0.8em;color:#007bff;}
+        .loading{text-align:center;color:#666;padding:20px;}
+        .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;}
+        .contact-item{background:#f8f9fa;padding:15px;border-radius:5px;border-right:3px solid #007bff;}
+        footer{text-align:center;padding:15px;color:#666;border-top:1px solid #ddd;margin-top:20px;}
+        @media(max-width:768px){body{padding:10px;}.profile-img{width:100px;height:100px;}}
+    </style>
 </head>
 <body>
-<div class="container">
-  <div class="profile-top-right">
-    <div class="rounded"><img src="profile_round.png" alt="محمد علی کمالوند" style="width:100%;height:100%;object-fit:cover"></div>
-  </div>
-  <header>
-    <div class="brand">
-      <div class="avatar-box"><img src="profile.jpg" alt="محمد علی کمالوند"></div>
-      <div>
-        <h1 style="margin:0">محمد علی کمالوند</h1>
-        <div style="color:var(--muted);font-size:14px">مشاور انبارداری و زنجیره تامین — بهینه‌سازی، ایمنی و فناوری</div>
-      </div>
+    <!-- هدر -->
+    <header>
+        <img src="https://via.placeholder.com/120x120/007bff/ffffff?text=MAK" alt="محمد علی کمالوند" class="profile-img">
+        <h1>محمد علی کمالوند</h1>
+        <h2>مشاور انبارداری و زنجیره تامین</h2>
+    </header>
+
+    <!-- معرفی -->
+    <div class="section">
+        <h2>🤖 مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین</h2>
+        <p>من، <strong>محمد علی کمالوند</strong>، با <strong>تجربه علمی و عملی</strong> در بهبود عملیات انبار و پیاده‌سازی <strong>هوش مصنوعی</strong> برای افزایش <strong>ایمنی و کارایی</strong>، <strong>مقالات قابل اجرا</strong> برای <strong>مدیران لجستیک</strong> منتشر می‌کنم.</p>
     </div>
-    <nav>
-      <a href="#articles">مقالات</a>
-      <a href="#about">درباره</a>
-      <a href="#contact">تماس</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero" style="margin-top:18px">
-      <h2 style="margin:0 0 8px">مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین</h2>
-      <p style="margin:0 0 12px">من، <strong>محمد علی کمالوند</strong>، تجربهٔ عملی در بهبود عملیات انبار و پیاده‌سازی راهکارهای هوش مصنوعی برای افزایش ایمنی و کارایی دارم. اینجا مقالات عملی و قابل اجرا برای مدیران و مهندسان لجستیک منتشر می‌شود.</p>
-      <a class="btn" href="#articles">مطالعه مقالات</a>
-      <a class="btn" href="#contact" style="background:#374151;margin-right:8px">تماس با من</a>
-    </section>
-    <div class="grid">
-      <section>
-        <h3 id="articles" style="margin-top:0">مقالات</h3>
-        <div id="articles-container" class="articles-list">
-          <p style="color:var(--muted)">در حال بارگذاری مقالات... (فایل articles/index.json خوانده می‌شود)</p>
-        </div>
-      </section>
-      <aside>
-        <div class="card">
-          <h4>درباره</h4>
-          <p style="color:var(--muted);margin:6px 0">مهندس و مشاور انبارداری و زنجیره تامین. تجارب عملی، مطالعات موردی و راهکارهای فنی برای بهبود ایمنی و بهره‌وری انبارها.</p>
-          <hr style="border:none;border-top:1px solid rgba(2,6,23,0.04);margin:12px 0">
-          <h4 id="contact">تماس</h4>
-          <p style="margin:6px 0">📞 ۰۹۱۹۶۲۵۷۳۷۷<br>📧 <a href="mailto:mohamadalikamalvand@gmail.com">mohamadalikamalvand@gmail.com</a></p>
-          <p style="margin:6px 0">GitHub: <a href="https://github.com/kamalvand110-bit">kamalvand110-bit</a></p>
-        </div>
-      </aside>
+
+    <!-- مقالات -->
+    <div class="section">
+        <h2>📚 مقالات علمی و عملی</h2>
+        <div id="articles" class="loading">در حال بارگذاری...</div>
     </div>
-  </main>
-  <footer>© 2025 — محمد علی کمالوند. همه حقوق محفوظ است.</footer>
-</div>
-<script>
-async function loadArticles(){
-  try{
-    const res = await fetch('articles/index.json', {cache:'no-store'});
-    if(!res.ok) throw new Error('خطا در دریافت فایل مقالات');
-    const data = await res.json();
-    const container = document.getElementById('articles-container');
-    container.innerHTML = '';
-    if(!data.articles || data.articles.length===0){
-      container.innerHTML = '<p style="color:var(--muted)">مقاله‌ای یافت نشد.</p>';
-      return;
-    }
-    data.articles.forEach(a=>{
-      const div = document.createElement('div');
-      div.className = 'article-item';
-      div.innerHTML = `<h4><a href="${a.url}">${a.title}</a></h4><p style="color:#475569;margin:6px 0">${a.description||''}</p><p style="font-size:13px;color:var(--muted)">${a.date} • ${a.tags ? a.tags.join(' • ') : ''}</p>`;
-      container.appendChild(div);
-    });
-  }catch(e){
-    document.getElementById('articles-container').innerHTML = '<p style="color:var(--muted)">خطا در بارگذاری مقالات.</p>';
-    console.error(e);
-  }
-}
-loadArticles();
-</script>
+
+    <!-- تماس -->
+    <div class="section">
+        <h2>📞 تماس با من</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <strong>📱 تلفن</strong><br>
+                <a href="tel:+989196257377">+98 919 625 7377</a>
+            </div>
+            <div class="contact-item">
+                <strong>✉️ ایمیل</strong><br>
+                <a href="mailto:mohamadalikamalvand@gmail.com">mohamadalikamalvand@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>💼 مشاوره</strong><br>
+                <a href="mailto:mohamadalikamalvand@gmail.com?subject=درخواست مشاوره">درخواست مشاوره</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; ۱۴۰۴ محمد علی کمالوند | تمامی حقوق محفوظ است</footer>
+
+    <script>
+    // مقالات استاتیک (تا JSON درست بشه)
+    document.getElementById('articles').innerHTML = `
+        <div class="article">
+            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/chidamane.pdf" target="_blank">چیدمان انبارهای مواد شیمیایی با هوش مصنوعی</a></h3>
+            <p>بهینه‌سازی چیدمان با الگوریتم‌های AI و استانداردهای ایمنی</p>
+            <div class="article-meta">📅 ۱۴۰۴/۰۵/۰۹ | <span class="tags">انبارداری • AI • ایمنی</span></div>
+        </div>
+        <div class="article">
+            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/graph.pdf" target="_blank">انواع گراف و کاربرد در هوش مصنوعی</a></h3>
+            <p>معمای کونیگسبرگ و بهینه‌سازی مسیرهای لجستیک</p>
+            <div class="article-meta">📅 ۱۴۰۴/۰۷/۲۰ | <span class="tags">گراف • لجستیک • AI</span></div>
+        </div>
+        <div class="article">
+            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/strategy.pdf" target="_blank">استراتژی بازطراحی زنجیره تامین</a></h3>
+            <p>مدل‌های مدرن و نقش انبار هوشمند</p>
+            <div class="article-meta">📅 ۱۴۰۴/۰۷/۲۰ | <span class="tags">زنجیره تامین • استراتژی</span></div>
+        </div>
+        <div class="article">
+            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/tracking.pdf" target="_blank">ردیابی با ربات تلگرام</a></h3>
+            <p>نظارت آنی محموله‌ها و تجهیزات انبار</p>
+            <div class="article-meta">📅 ۱۴۰۴/۰۷/۲۰ | <span class="tags">ردیابی • ربات • لجستیک</span></div>
+        </div>
+    `;
+    </script>
 </body>
 </html>
