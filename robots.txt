@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kamalvandm110-bit/mohamadalikamalvand448.github.io/sitemap.xml
